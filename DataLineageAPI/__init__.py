@@ -14,6 +14,6 @@ app = Flask(__name__)
 } """
 
 
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:////lineage.db"
+app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://postgres:RDn5ODgpaH45IKJFOgUL@containers-us-west-32.railway.app:6060/railway"#"sqlite:////lineage.db"
 db = initialize_db()
-migrate = Migrate(app, db)
+#migrate = Migrate(app, db)
